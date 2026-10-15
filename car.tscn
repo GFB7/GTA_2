@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b5obrkkle5lpr"]
+
+[ext_resource type="Script" uid="uid://2mp01usq7ulj" path="res://car.gd" id="1_7822p"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_y1h78"]
+
+[node name="car" type="CharacterBody2D" unique_id=912336531]
+script = ExtResource("1_7822p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=944133488]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=682692110]
+position = Vector2(25.25, 60.750008)
+scale = Vector2(51.5, 122.5)
+texture = SubResource("PlaceholderTexture2D_y1h78")
+
+[node name="Timer" type="Timer" parent="." unique_id=21648100]
+one_shot = true

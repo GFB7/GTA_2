@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bu5ihkywkkjgk"]
+
+[ext_resource type="Script" uid="uid://dqqo1ou1t2gqw" path="res://camera_2d.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b5obrkkle5lpr" path="res://car.tscn" id="2_0xm2m"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_y1h78"]
+
+[node name="Node2D" type="Node2D" unique_id=959946478]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=357029975]
+position_smoothing_enabled = true
+script = ExtResource("1_ig7tw")
+
+[node name="car" parent="." unique_id=912336531 instance=ExtResource("2_0xm2m")]
+position = Vector2(42, 465)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=530568553]
+position = Vector2(-5, -62.87506)
+scale = Vector2(36.5, 1270.2501)
+texture = SubResource("PlaceholderTexture2D_y1h78")
